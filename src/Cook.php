@@ -19,8 +19,8 @@ class Cook
      */
 	public function processing(array $orders) {
 		foreach ($orders as $order) {
-            $order->processed_at = $order->timeSend + $order->timeCook;
-        }
-        return $orders;
+           		$order->processed_at = $order->timeSend + $order->timeCook;
+        	}
+        	return $orders;
 	}
 }
